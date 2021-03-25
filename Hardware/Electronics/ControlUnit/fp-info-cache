@@ -1,4 +1,4 @@
-18671775484821145
+18668541091093145
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -48762,13 +48762,6 @@ Batt_PHS_Hor_Long18mm
 3
 3
 CustomLib
-DIOM5436X244N
-
-
-0
-2
-2
-CustomLib
 Push_Switch_TS1107GS-5
 
 
@@ -48782,13 +48775,6 @@ RobotDyn_SAMD21_M0-Mini
 0
 28
 28
-CustomLib
-Sw1
-
-
-0
-3
-3
 CustomLib
 gjn
 
