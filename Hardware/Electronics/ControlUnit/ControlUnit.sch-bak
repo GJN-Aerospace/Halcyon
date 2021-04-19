@@ -653,11 +653,11 @@ Wire Wire Line
 	8250 9750 7950 9750
 Wire Wire Line
 	8250 9850 7950 9850
-Text Label 7950 9650 0    50   ~ 0
-SWCLK
 Text Label 7950 9750 0    50   ~ 0
-SWDIO
+SWCLK
 Text Label 7950 9850 0    50   ~ 0
+SWDIO
+Text Label 7950 9650 0    50   ~ 0
 RESET
 Wire Wire Line
 	3600 6300 3700 6300
