@@ -13,21 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	1700 8100 2050 8100
-Wire Wire Line
-	2050 8100 2050 8200
-$Comp
-L power:GND #PWR05
-U 1 1 604B9A62
-P 2050 8200
-F 0 "#PWR05" H 2050 7950 50  0001 C CNN
-F 1 "GND" H 2055 8027 50  0000 C CNN
-F 2 "" H 2050 8200 50  0001 C CNN
-F 3 "" H 2050 8200 50  0001 C CNN
-	1    2050 8200
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x03_Male J7
 U 1 1 604C3592
@@ -506,36 +491,16 @@ F 3 "" H 1550 10000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D D1
-U 1 1 6054242C
-P 2250 8200
-F 0 "D1" V 2204 8280 50  0000 L CNN
-F 1 "D" V 2295 8280 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2250 8200 50  0001 C CNN
-F 3 "~" H 2250 8200 50  0001 C CNN
-	1    2250 8200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 8350 2250 8400
-$Comp
 L power:GND #PWR08
 U 1 1 6054633D
-P 2250 8400
-F 0 "#PWR08" H 2250 8150 50  0001 C CNN
-F 1 "GND" H 2255 8227 50  0000 C CNN
-F 2 "" H 2250 8400 50  0001 C CNN
-F 3 "" H 2250 8400 50  0001 C CNN
-	1    2250 8400
+P 1450 8750
+F 0 "#PWR08" H 1450 8500 50  0001 C CNN
+F 1 "GND" H 1455 8577 50  0000 C CNN
+F 2 "" H 1450 8750 50  0001 C CNN
+F 3 "" H 1450 8750 50  0001 C CNN
+	1    1450 8750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2250 8000 2250 8050
-Connection ~ 2250 8000
-Wire Wire Line
-	2250 8000 2400 8000
-Wire Wire Line
-	1700 8000 2250 8000
 $Comp
 L Device:Fuse F1
 U 1 1 60561450
@@ -1499,12 +1464,12 @@ CS_RAD
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 606C8AB5
-P 1500 8100
-F 0 "J1" H 1418 7775 50  0000 C CNN
-F 1 "Screw_Terminal_01x02, Batt 9V" H 1418 7866 50  0000 C CNN
-F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 1500 8100 50  0001 C CNN
-F 3 "~" H 1500 8100 50  0001 C CNN
-	1    1500 8100
+P 1150 8100
+F 0 "J1" H 1100 7750 50  0000 C CNN
+F 1 "Screw_Terminal_01x02, Batt 9V" H 700 7850 50  0000 C CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x02_P3.50mm_Horizontal" H 1150 8100 50  0001 C CNN
+F 3 "~" H 1150 8100 50  0001 C CNN
+	1    1150 8100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1779,7 +1744,7 @@ Wire Wire Line
 	8100 8300 7750 8300
 Text Label 4900 3000 0    50   ~ 0
 Batt
-Text Label 5100 9550 0    50   ~ 0
+Text Label 4850 9550 0    50   ~ 0
 Batt
 $Comp
 L Device:R R8
@@ -1803,14 +1768,12 @@ F 3 "~" H 5350 9750 50  0001 C CNN
 	1    5350 9750
 	1    0    0    -1  
 $EndComp
-Text Label 3200 7750 0    50   ~ 0
+Text Label 3350 7750 0    50   ~ 0
 Vbatt
 Text Label 5350 9100 0    50   ~ 0
 Vbatt
 Wire Wire Line
 	5350 9500 5350 9550
-Wire Wire Line
-	5350 9550 5100 9550
 Connection ~ 5350 9550
 Wire Wire Line
 	5350 9550 5350 9600
@@ -2007,7 +1970,7 @@ L Transistor_FET:AO3401A Q1
 U 1 1 60552A18
 P 3100 9850
 F 0 "Q1" V 3100 10000 50  0000 L CNN
-F 1 "BSH203" V 3000 10000 50  0000 L CNN
+F 1 " " V 3000 10000 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 9775 50  0001 L CIN
 F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 3100 9850 50  0001 L CNN
 	1    3100 9850
@@ -2121,12 +2084,12 @@ Connection ~ 3950 9300
 Wire Wire Line
 	1900 9300 2500 9300
 Wire Wire Line
-	2800 7900 3200 7900
+	3150 7900 3350 7900
 Wire Wire Line
-	3200 7900 3200 7750
-Connection ~ 3200 7900
+	3350 7900 3350 7750
+Connection ~ 3350 7900
 Wire Wire Line
-	3200 7900 3650 7900
+	3350 7900 3650 7900
 Wire Wire Line
 	15200 1950 15200 2000
 Wire Wire Line
@@ -2140,12 +2103,12 @@ Wire Wire Line
 $Comp
 L Switch:SW_DPDT_x2 SW1
 U 1 1 6054C740
-P 2600 8000
-F 0 "SW1" H 2600 8285 50  0000 C CNN
-F 1 "SW_DPDT_x2" H 2600 8194 50  0000 C CNN
-F 2 "Switch:Sw1" H 2600 8000 50  0001 C CNN
-F 3 "~" H 2600 8000 50  0001 C CNN
-	1    2600 8000
+P 2950 8000
+F 0 "SW1" H 2950 8285 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 2950 8194 50  0000 C CNN
+F 2 "Switch:Sw1" H 2950 8000 50  0001 C CNN
+F 3 "~" H 2950 8000 50  0001 C CNN
+	1    2950 8000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2319,7 +2282,7 @@ NoConn ~ 4700 3500
 NoConn ~ 2700 5500
 NoConn ~ 2700 4900
 NoConn ~ 2700 4700
-NoConn ~ 2800 8100
+NoConn ~ 3150 8100
 Wire Wire Line
 	7400 2050 7400 1950
 Connection ~ 7400 1950
@@ -2460,4 +2423,91 @@ Text Notes 14450 7350 0    50   ~ 10
 Mounting holes
 Text Notes 9600 7350 0    50   ~ 10
 State indicators
+$Comp
+L Device:D_Zener D1
+U 1 1 608DBB45
+P 2550 8150
+F 0 "D1" V 2504 8230 50  0000 L CNN
+F 1 "D_Zener" V 2595 8230 50  0000 L CNN
+F 2 "" H 2550 8150 50  0001 C CNN
+F 3 "~" H 2550 8150 50  0001 C CNN
+	1    2550 8150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:BS250 Q2
+U 1 1 6091F04D
+P 2250 8100
+F 0 "Q2" V 2500 7900 50  0000 C CNN
+F 1 " " V 2501 8100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2450 8025 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/70209/70209.pdf" H 2250 8100 50  0001 L CNN
+	1    2250 8100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 8000 2050 8000
+Wire Wire Line
+	1350 8100 1450 8100
+$Comp
+L Device:R R16
+U 1 1 609CD907
+P 2250 8500
+F 0 "R16" H 2320 8546 50  0000 L CNN
+F 1 "R" H 2320 8455 50  0000 L CNN
+F 2 "" V 2180 8500 50  0001 C CNN
+F 3 "~" H 2250 8500 50  0001 C CNN
+	1    2250 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 8000 2550 8000
+Connection ~ 2550 8000
+Wire Wire Line
+	2550 8000 2750 8000
+Wire Wire Line
+	1450 8100 1450 8700
+Wire Wire Line
+	2250 8300 2250 8350
+Wire Wire Line
+	2550 8300 2550 8350
+Wire Wire Line
+	2550 8350 2250 8350
+Connection ~ 2250 8350
+Wire Wire Line
+	2250 8650 2250 8700
+Wire Wire Line
+	2250 8700 1450 8700
+Connection ~ 1450 8700
+Wire Wire Line
+	1450 8700 1450 8750
+Wire Wire Line
+	4850 9550 5100 9550
+$Comp
+L Device:C C22
+U 1 1 60B6548E
+P 5100 9700
+F 0 "C22" H 4800 9750 50  0000 L CNN
+F 1 "100n" H 4800 9650 50  0000 L CNN
+F 2 "" H 5138 9550 50  0001 C CNN
+F 3 "~" H 5100 9700 50  0001 C CNN
+	1    5100 9700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5100 9550
+Wire Wire Line
+	5100 9550 5350 9550
+Wire Wire Line
+	5100 9850 5100 9900
+$Comp
+L power:GND #PWR05
+U 1 1 60B7E9A3
+P 5100 9900
+F 0 "#PWR05" H 5100 9650 50  0001 C CNN
+F 1 "GND" H 5105 9727 50  0000 C CNN
+F 2 "" H 5100 9900 50  0001 C CNN
+F 3 "" H 5100 9900 50  0001 C CNN
+	1    5100 9900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
