@@ -2414,6 +2414,8 @@ Wire Wire Line
 Wire Wire Line
 	3600 8950 3600 8900
 Connection ~ 3350 8950
+Wire Wire Line
+	1350 8000 2300 8000
 $Comp
 L Simulation_SPICE:DIODE D1
 U 1 1 60A4F29C
@@ -2427,6 +2429,4 @@ F 5 "D" H 2450 8000 50  0001 L CNN "Spice_Primitive"
 	1    2450 8000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 8000 2300 8000
 $EndSCHEMATC
